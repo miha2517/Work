@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	int a, b, c, f;
+	cout << "Введите число: ";
+	cin >> a;
+	int A = a * 2;
+	cout << "Ваше число = " << A << endl;
+	cout << "Введите число: ";
+	cin >> b;
+	int B = b - 3;
+	cout << "Ваше число = " << B << endl;
+	cout << "Введите число: ";
+	cin >> c;
+	int C = c * c;
+	cout << "Ваше число = " << C << endl;
+	int F = A + B + C;
+	cout << "Ваше число = " << F << endl;
+	return 0;
+}
