@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	int x, v;
+	cout << "Введите число: ";
+	cin >> x;
+	cout << "Введите число: ";
+	cin >> v;
+	int y = 1 / x + 1 / 2 * x + 1 / 3 * x + 1 / x * v;
+	int i;
+	for (i = 1; i <= y; i++){
+		std::string myString(x, '0');
+		cout << myString << endl;
+	}
+
+	system("pause");
+
+}
