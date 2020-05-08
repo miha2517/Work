@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime> 
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "rus");
+
+    int randomDigit = 0;
+    int version = 0;
+
+    srand(time(NULL));
+    randomDigit = 1 + rand() % 25;
+
+    cout << "Отгадайте число, которое я загадал (1-25):";
+    cin >> version;
+
+    if (version == randomDigit)
+    {
+        cout << "Дa! Я загадал число - " << randomDigit << endl;
+    }
+    else
+    {
+        cout << "Нет! Я загадал число - " << randomDigit << endl;
+    }
+
+    return 0;
+}
