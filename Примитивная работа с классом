@@ -1,0 +1,59 @@
+ #include <iostream>
+#include <string> 
+using namespace std;
+
+class human 
+{
+public:
+	int age;
+	int weight;
+	string name;
+
+};
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	double b, c, i, f;
+
+	cout << "Имя первого человека - Ivan Koloff " << endl;
+	cout << "Введите возраст первого человека " << endl;
+	cin >> b;
+	cout << "Введите вес первого человека" << endl;
+	cin >> c;
+
+	cout << "Имя второго человека - Michael Krakovsky " << endl;
+	cout << "Введите возраст второго человека " << endl;
+	cin >> i;
+	cout << "Введите вес второго человека " << endl;
+	cin >> f;
+
+	human firsthuman;
+    firsthuman.age = b;
+	firsthuman.name = "Ivan Koloff";
+	firsthuman.weight = c;
+	cout << "Возраст: " << firsthuman.age << endl;
+	cout << "Имя: " << firsthuman.name << endl;
+	cout << "Вес: " << firsthuman.weight << endl;
+
+	cout << "_____________________________________" << endl;
+
+	human secondhuman;
+	secondhuman.age = i;
+	secondhuman.name = "Mishael Krakovsky";
+	secondhuman.weight = f;
+	cout << "Возраст: " << secondhuman.age << endl;
+	cout << "Имя: " << secondhuman.name << endl;
+	cout << "Вес: " << secondhuman.weight << endl;
+
+	cout << "_____________________________________" << endl;
+
+	double sumage = (secondhuman.age + firsthuman.age) / 2;
+	double sumweight = (secondhuman.weight + firsthuman.weight) / 2;
+
+	cout << "Средний вес Михаила и Ивана = " << sumage << endl;
+	cout << "Средний возраст Михаила и Ивана = " << sumweight << endl;
+
+	return 0;
+}
