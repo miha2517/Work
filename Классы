@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string> 
+using namespace std;
+
+class human 
+{
+public:
+	string age;
+	string weight;
+	string name;
+
+	string Print()
+	{
+		string resultName = "Имя - " + this->name;
+		string resultAge = "\nВозраст - " + this->age;
+		string resultWeight = "\nВес - " + this->weight;
+		string result = resultName + resultAge + resultWeight;
+		return result;
+	}
+
+	void setParams(string name, string age, string weight)
+	{
+		this->name = name;
+		this->age = age;
+		this->weight = weight;
+	}
+};
+
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	human a;
+	a.setParams("test", "50", "120");
+	
+	cout << a.Print() << endl;
+
+	return 0;
+}
